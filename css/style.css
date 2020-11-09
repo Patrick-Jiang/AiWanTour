@@ -53,17 +53,55 @@ body {
   color:#ffffff;
   text-transform: uppercase;
   line-height: 1.7em;
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
   display: block;
   font-size: 60px;
   font-weight: 400;
-  letter-spacing: 35px;
+  letter-spacing: 25px;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  /* animation-timing-function: ease-in; */
+  /* animation-iteration-count: 3; */
+  /* animation-delay: 1s; */
 }
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: 17.4px;
+  letter-spacing: 10.4px;
+  text-align: center;
+  animation: moveInRight 1s ease-in;
+
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+
+  80%{
+    transform: translate(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translate(100px);
+  }
+
+  80%{
+    transform: translate(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
