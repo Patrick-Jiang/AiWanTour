@@ -1,7 +1,7 @@
 .row {
   max-width: $gird-width;
   margin: 0px auto;
-  background-color: #eee;
+  // background-color: #eee;
 
 
   &:not(:last-child){
@@ -13,7 +13,7 @@
   //$ Selecting all the class ending with col-
   // "* Selecting all the class with col-
   [class^="col-"]{
-    background-color: orange;
+    // background-color: orange;
     float:left;
     &:not(:last-child){
       margin-right: $gutter-horizontal;
