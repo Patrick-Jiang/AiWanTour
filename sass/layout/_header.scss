@@ -3,12 +3,13 @@
   background-image: linear-gradient(
       to right bottom,
       rgba($color-primary-light, 0.707),
-      rgba($color-primary-drak, 0.726)
+      rgba($color-primary-dark, 0.726)
     ),
     url('../img/hero.jpg');
   background-size: cover;
   background-position: top;
   position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
   &__logo-box {
     position: absolute;
